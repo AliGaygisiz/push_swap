@@ -64,9 +64,21 @@ int	stack_len(t_stack *stack)
 	i = 0;
 	while (stack != 0)
 	{
-		stack->index = i;
 		i++;
 		stack = stack->next;
 	}
 	return (i);
+}
+
+void reindex(t_stack *stack)
+{
+	int	i;
+
+	i = 0;
+	while (stack != 0)
+	{
+		stack->index = i;
+		i++;
+		stack = stack->next;
+	}
 }
