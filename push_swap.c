@@ -118,9 +118,10 @@ int main (int argc, char *argv[])
     // print_nodes(root.a);
     // ft_printf("%p\n", root.a);
     // rra(&root);
-    print_nodes(root.a);
+    // print_nodes(root.a);
     // print_stack(&root);
-    ft_printf("%d\n", lowest_index(root.a));
+    // ft_printf("%d\n", lowest_index(root.a));
+    median(root.a);
 
     return 0;
 }

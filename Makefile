@@ -11,7 +11,8 @@ SRCS  = push_swap.c \
 		./src/rotate.c \
 		./src/rev_rotate.c \
 		./src/sort_utils.c \
-		./src/sort_small.c
+		./src/sort_small.c \
+		./src/median.c
 
 all: $(NAME)
 

@@ -50,5 +50,6 @@ void    print_op(int op);
 void    print_nodes(t_stack *stack);
 void    reindex(t_stack *stack);
 int lowest_index(t_stack *stack);
+float median(t_stack *stack);
 
 #endif
