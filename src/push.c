@@ -24,6 +24,7 @@ void pa(t_root *root)
         root->a->next = 0;
         root->b->previous = 0;
     }
+    ft_printf("pa\n");
     refactor(root);
 }
 
@@ -51,5 +52,6 @@ void pb(t_root *root)
         root->b->next = 0;
         root->a->previous = 0;
     }
+    ft_printf("pb\n");
     refactor(root);
 }

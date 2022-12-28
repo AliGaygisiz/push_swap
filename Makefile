@@ -1,6 +1,6 @@
 NAME = push_swap
 CC = gcc
-CFLAGS = #-g -Wall -Werror -Wextra
+CFLAGS = -g -Wall -Werror -Wextra
 RM = rm -rf
 FT_PRINTF = ./ft_printf/libftprintf.a
 SRCS  = push_swap.c \
@@ -12,7 +12,8 @@ SRCS  = push_swap.c \
 		./src/rev_rotate.c \
 		./src/sort_utils.c \
 		./src/sort_small.c \
-		./src/median.c
+		./src/median.c \
+		./src/index_utils.c
 
 all: $(NAME)
 

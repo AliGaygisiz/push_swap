@@ -95,6 +95,7 @@ int find_lowest(t_stack *list)
     return (lowest);
 }
 
+#include <stdio.h>
 int main (int argc, char *argv[])
 {
     t_root root;
@@ -107,11 +108,11 @@ int main (int argc, char *argv[])
         return (0);
     }
     init_stack(&root, argc, argv);
-    // print_stack(&root);
+    print_stack(&root);
     // print_nodes(root.a);
     // print_nodes(root.a);
     // ra(&root);
-    // send_sort(&root);
+    send_sort(&root);
     // rra(&root);
     // ft_printf("%p\n", root.a);
     // sa(&root);
@@ -121,7 +122,6 @@ int main (int argc, char *argv[])
     // print_nodes(root.a);
     // print_stack(&root);
     // ft_printf("%d\n", lowest_index(root.a));
-    median(root.a);
 
     return 0;
 }

@@ -23,25 +23,6 @@ void send_sort(t_root *root)
         sort_two(root);
     else if (stack_len(root->a) == 3)
         sort_three(root);
-}
-
-int lowest_index(t_stack *stack)
-{
-    t_stack *tmp;
-    int nbr;
-    int index;
-
-    tmp = stack->next;
-    nbr = stack->nbr;
-    index = stack->index;
-    while (tmp != 0)
-    {
-        if (nbr > tmp->nbr)
-        {
-            nbr = tmp->nbr;
-            index = tmp->index;
-        }
-        tmp = tmp->next;
-    }
-    return (index);
+    else if (stack_len(root->a) == 4)
+        sort_four(root);
 }

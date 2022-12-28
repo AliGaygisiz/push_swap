@@ -49,7 +49,14 @@ void    send_sort(t_root *root);
 void    print_op(int op);
 void    print_nodes(t_stack *stack);
 void    reindex(t_stack *stack);
+t_stack *locate(t_stack *stack, int index);
 int lowest_index(t_stack *stack);
+int highest_index(t_stack *stack);
 float median(t_stack *stack);
+int *sort_median(int *nbrs, int len);
+void smallest_to_top_four(t_root *root);
+void smallest_to_top_three(t_root *root);
+void sort_four(t_root *root);
+void print_stack(t_root *root);
 
 #endif

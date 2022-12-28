@@ -14,8 +14,8 @@ void rra(t_root *root)
     new_start->next = old_start;
     new_start->previous = 0;
     root->a = new_start;
-    refactor(root);
     ft_printf("rra\n");
+    refactor(root);
 }
 
 void rrb(t_root *root)
@@ -32,8 +32,8 @@ void rrb(t_root *root)
     new_start->next = old_start;
     new_start->previous = 0;
     root->b = new_start;
-    refactor(root);
     ft_printf("rrb\n");
+    refactor(root);
 }
 
 static void rrr_a(t_root *root)
@@ -75,4 +75,5 @@ void rrr(t_root *root)
     rrr_a(root);
     rrr_b(root);
     ft_printf("rrr\n");
+    print_stack(root);
 }
